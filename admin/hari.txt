@@ -1,0 +1,32 @@
+<?
+date_default_timezone_set('Asia/Jakarta');
+$mintahari=date("w");
+$day[0]="Minggu";
+$day[1]="Senin";
+$day[2]="Selasa";
+$day[3]="Rabu";
+$day[4]="Kamis";
+$day[5]="Jumat";
+$day[6]="Sabtu";
+$hari=$day[$mintahari];
+
+$mintabulan=date("n");
+$month[1]="Januari";
+$month[2]="Februari";
+$month[3]="Maret";
+$month[4]="April";
+$month[5]="Mei";
+$month[6]="Juni";
+$month[7]="Juli";
+$month[8]="Agustus";
+$month[9]="September";
+$month[10]="Oktober";
+$month[11]="November";
+$month[12]="Desember";
+$bulan=$month[$mintabulan];
+
+$tgl=date("j");
+$thn=date("Y");
+echo "<a title='waktu server'>Dari [".$mintahari.", ".$tgl." ".$mintabulan." ".$thn."]
+dikonversikan menjadi [".$hari.", ".$tgl." ".$bulan." ".$thn."]</a>";
+?>
